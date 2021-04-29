@@ -11,16 +11,22 @@ CREDENTIALS=~/.config/bml-cli/.env
 
 #Setting terminal output colors
 red=`tput setaf 1`
-green=`tput setaf 2`
+green=`tput setaf 46`
 brown=`tput setaf 3`
 blue=`tput setaf 4`
 pink=`tput setaf 5`
-cyan=`tput setaf 6`
+cyan=`tput setaf 39`
 gray=`tput setaf 7`
 darkgray=`tput setaf 8`
 lightred=`tput setaf 9`
 lightgreen=`tput setaf 10`
 yellow=`tput setaf 11`
+
+#A more bright red best to use for errors
+error_red `tput setaf 196`
+#A Bright Green best for positive feedback dont overuse it
+valid_gree `tput setaf 82`
+
 reset=`tput sgr0`
 
 #source osdetect.sh 2>/dev/null
